@@ -11,11 +11,11 @@ int number1 = Convert.ToInt32 (Console.ReadLine());
 Console.WriteLine("Видите число которое нужно проверить является ли оно квадратом первого числа: " );
 int number2 = Convert.ToInt32 (Console.ReadLine());
 
-if (number1 == number2 * number2);
+if (number1 == number2 * number2)
 {
-Console.WriteLine( "Да");
+     Console.WriteLine("Да");
+ }
+ else
+{
+	Console.WriteLine("Нет");
 }
-else
-{
-  Console.WriteLine("Нет");   
-}   
