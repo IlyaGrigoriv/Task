@@ -6,25 +6,26 @@
 // a = -9 b = -3 -> max = -3
 
 Console.WriteLine("Ввидите число 1: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Ввидите число 2: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
 int max = 0;
 int min = 0;
-if (num1 != num2)
+if (a != b)
 {
     Console.ReadLine("Числа равны!!");
+    if (num1 > num2)
+    {
+             (max = num1);
+             (min = num2);
+    }
+        else
+     {
+             (max = num2);
+             (min = num1);
+     } 
 }
-if (num1 > num2)
-{
-(max = num1);
-(min = num2);
-}
-else
-{
-    (max = num2);
-    (min = num1);
-} 
+
 
 System.Console.ReadLine($"Максимальное число {max}"); 
 System.Console.ReadLine($" Минимальное число {min}");
