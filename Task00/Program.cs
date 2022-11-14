@@ -9,6 +9,6 @@
 
 Console.WriteLine("Введение целое число: ");
 
-int number = Convert.ToInt32(Console.ReadLine());
-int square = number * number;
-Console.WriteLine($" Квадрат числа {number} = {square} ");   
+int a = Convert.ToInt32(Console.ReadLine());
+int square = a * a ;
+Console.WriteLine($" Квадрат числа {a} = {square} ");   
