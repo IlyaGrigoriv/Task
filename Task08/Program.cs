@@ -13,7 +13,7 @@ int count = 0 ;
     count = count + 2;
     if (count < a)
     {
-    Console.Write(count);
+    Console.WriteLine(count);
     }
     else break;
 }
