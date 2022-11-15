@@ -8,26 +8,27 @@
 Console.WriteLine("Ввидите число 1: ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Ввидите число 2: ");
-int b = Convert.ToInt32(Console.ReadLine());
+int b = Convert.ToInt32(value: Console.ReadLine());
 int max = 0;
 int min = 0;
-if (a != b)
+if (a == b) Console.WriteLine("Числа равны: "); // не работает если числа одинаковы
+
 {
-    Console.ReadLine("Числа равны!!");
-    if (num1 > num2)
+        if (a > b)
     {
-             (max = num1);
-             (min = num2);
+        max = a;
+        min = b;
     }
-        else
-     {
-             (max = num2);
-             (min = num1);
-     } 
+    else
+    {
+        max = b;
+        min = a;
+    }
+
 }
 
 
-System.Console.ReadLine($"Максимальное число {max}"); 
-System.Console.ReadLine($" Минимальное число {min}");
+Console.WriteLine($" Максимальное число {max}");
+Console.WriteLine($" Минимальное число {min}");
 
 

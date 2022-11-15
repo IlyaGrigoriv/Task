@@ -10,7 +10,7 @@ Console.WriteLine("Понедельник");
 else if (num == 2)
 Console.WriteLine("Вторник");
 else if (num == 3)
-Console.WriteLine("ПСреда");
+Console.WriteLine("Среда");
 else if (num == 4)
 Console.WriteLine("Четверг");
 else if (num == 5)
