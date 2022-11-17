@@ -10,7 +10,7 @@ Console.WriteLine(Multipliсity(number) ? "да" : "нет");
 
 bool Multipliсity(int num)
 {
-    return (num % 7 == 0) && (num % 23 == 0);
+    return (num % 7 == 0) & (num % 23 == 0);
 }
 
 
