@@ -10,7 +10,7 @@
 Console.WriteLine("Ввидите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num < 100) Console.WriteLine("Третьей цифры нет");
-int Metod3(int number)// не понимаю ошибку
+int Metod3(int number)// не понимаю ошибку (не все пути к коду возвращают значение)
 {
     while (number > 999)
     {
