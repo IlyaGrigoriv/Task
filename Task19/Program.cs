@@ -9,11 +9,29 @@
 Console.WriteLine("Ввидите пятизначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number < 9999 || number > 99999) System.Console.WriteLine("Ведено не правельное число");
-int Palindrome(int num)
+else
 {
-    int num2 = 0;
-    if (num2 = num / 10) return num2;
+void Palindrome(int numA1)
+{
+    int exam1 = numA1 / 10000; 
+    int exam2 = numA1 % 10; 
+    if (exam1 != exam2) System.Console.WriteLine("Число не палиндромна");
+    else
+    {
+
+        int exam3 = numA1 / 1000; 
+        int exam5 = exam3 % 10; 
+        int exam4 = numA1 % 100; 
+        int exam6 = exam4 / 10; 
+
+        if (exam5 == exam6) System.Console.WriteLine("Число полиндромно");
+        else
+        {
+            if (exam5 != exam6) 
+            System.Console.WriteLine("Число не палиндромна");
+        }
+    }
+}Palindrome(number);
 }
 
-bool palindrome = Palindrome(number);
-Console.WriteLine(palindrome);
+

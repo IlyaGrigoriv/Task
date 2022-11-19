@@ -8,13 +8,18 @@
 // 1 -> нет
 Console.WriteLine("Ввидите число от 1-7 обозначающий день недели: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int Metod4(int num)// не понимаю ошибку
+void Metod4(int num)
 {
-    if (num == 7 || num == 6 ) Console.WriteLine("да");
-    if (num < 6 ) Console.WriteLine("нет");
+    if (num < 6 || num > 7) System.Console.WriteLine("Нет");
+    if (num == 7 || num == 6) System.Console.WriteLine("Да");
+    if (num > 7) System.Console.WriteLine("Такого дня недели не существует:");
 }
+Metod4(number);
 
-int metod4 = Metod4(number);
+
+
+
+
 
 
 
