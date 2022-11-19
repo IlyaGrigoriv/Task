@@ -9,18 +9,27 @@
 
 Console.WriteLine("Ввидите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-if (num < 100) Console.WriteLine("Третьей цифры нет");
-int Metod3(int number)// не понимаю ошибку (не все пути к коду возвращают значение)
+if (num < 100)
 {
-    while (number > 999)
-    {
-        number = number / 10;
-    }
-    int c = 0;
-    c = number % 10;
-    Console.WriteLine(c);
+    Console.WriteLine("Третьей цифры нет");
 }
-int metod = Metod3(num);
+else
+{
+    int metod = Metod3(num); Console.WriteLine(metod);
+    int Metod3(int number)
+        {
+        while (number > 999)
+        {
+            number = number / 10;
+        }
+        int c = number % 10;
+        return (c);
+
+    }
+}
+
+
+
 
 
 

@@ -7,13 +7,23 @@
 // 782 -> 8
 // 918 -> 1
 Console.WriteLine("Ввидите трехзначное число: ");
-int number= Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Metoth1(number));// не понимаю почему возвращаем number???
-int Metoth1(int Number)
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number < 99 || number > 999)
 {
-int Num = Number / 10;
-int Num2 = Num % 10;
-return Num2;
+    System.Console.WriteLine("Виденно не трехзначное число");
+}
+else 
+{
+    int Metoth1(int Numb)
+    {
+        int Num = Numb / 10;
+        int Num2 = Num % 10;
+        return Num2;
+    }
+    int metoth = Metoth1(number);
+     Console.WriteLine(metoth);
+    
 }
 
 
