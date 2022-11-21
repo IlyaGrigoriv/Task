@@ -18,7 +18,6 @@ void Palindrome(int numA1)
     if (exam1 != exam2) System.Console.WriteLine("Число не палиндромна");
     else
     {
-
         int exam3 = numA1 / 1000; 
         int exam5 = exam3 % 10; 
         int exam4 = numA1 % 100; 
