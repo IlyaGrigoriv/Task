@@ -18,15 +18,27 @@ Console.Write("Введите точки B по оси Z: ");
 int Bz = Convert.ToInt32(Console.ReadLine());
 
 
+// double Distance(int Ax, int Ay, int Az, int Bx, int By, int Bz)
+// {
+//    double SquareX = (Ax - Bx) * (Ax - Bx);//   System.Console.WriteLine(SquareX);// квадрат
+//    double SquareY = (Ay - By) * (Ay - By);// System.Console.WriteLine(yc);
+//    double SquareZ = (Az - Bz) * (Az - Bz); //ystem.Console.WriteLine(zc);
+//    double result = Math.Sqrt(SquareX + SquareY + SquareZ);//System.Console.WriteLine(result);//из корня
+//    return result;
+// }
+
+double res = Distance(Ax, Ay, Az, Bx, By, Bz);
+double resRound = Math.Round(res, 2, MidpointRounding.ToZero);
+Console.WriteLine(resRound);
+
 double Distance(int Ax, int Ay, int Az, int Bx, int By, int Bz)
 {
-   double SquareX = (Ax - Bx) * (Ax - Bx);//   System.Console.WriteLine(SquareX);// квадрат
-   double SquareY = (Ay - By) * (Ay - By);// System.Console.WriteLine(yc);
-   double SquareZ = (Az - Bz) * (Az - Bz); //ystem.Console.WriteLine(zc);
-   double result = Math.Sqrt(SquareX + SquareY + SquareZ);//System.Console.WriteLine(result);//из корня
-   return result;
+    double result =Math.Pow( (Ax - Bx),2)  
+    + Math.Pow((Ay - By),2)  
+    + Math.Pow((Az - Bz),2) ; //;System.Console.WriteLine(result);
+    // double SquareX = (Ax - Bx) * (Ax - Bx);//   System.Console.WriteLine(SquareX);// квадрат
+    // double SquareY = (Ay - By) * (Ay - By);// System.Console.WriteLine(yc);
+    // double SquareZ = (Az - Bz) * (Az - Bz); //ystem.Console.WriteLine(zc);
+     double result2 = Math.Sqrt(result);//System.Console.WriteLine(result);//из корня
+    return result2;
 }
-
-double res = Distance(Ax, Ay, Az, Bx, By ,Bz);
- double resRound = Math.Round(res, 2, MidpointRounding.ToZero);
-Console.WriteLine(resRound);
