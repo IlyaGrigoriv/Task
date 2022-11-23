@@ -7,12 +7,12 @@ System.Console.WriteLine("ввидите число");
 int number = Convert.ToInt32(System.Console.ReadLine());
 int SumNumber(int num)
 {
-    int Sum = -1;
+    int Sum = 1;
     for (int i = 1; i <= num; i++)
     {
-        Sum = i * i;
+        Sum = Sum * i;
     }
-    return Sum * num;
+    return Sum;
 
 }
 int sumNumber = SumNumber(number);
