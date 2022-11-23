@@ -7,6 +7,7 @@
 // 9012 -> 12
 System.Console.WriteLine("Ввидите число");
 int A = Convert.ToInt32(System.Console.ReadLine());
+if (A<0) A= -A;
 int SumNumber(int num)
 {
     int count = 1;
