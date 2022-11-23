@@ -6,20 +6,24 @@
 // 82 -> 10
 // 9012 -> 12
 System.Console.WriteLine("Ввидите число");
-int A = 111;//Convert.ToInt32(System.Console.ReadLine());
-void SumNumber(int num)
+int A = Convert.ToInt32(System.Console.ReadLine());
+int SumNumber(int num)
 {
-    
-    for (int i = 0; i < ; i +)
+    int count = 1;
+    int result1 = 0;
+    int result2 = 0;
+    int Sum = 0;
+
+    for (int i = 0; count > 0; i++)
     {
-        int result = 0;
-        sum = num % 10;
-        result = sum + result;
-
-
-
+        result1 = num % 10;  
+        result2 = num / 10;
+        Sum = result1 + Sum; 
+        num = result2;
+        count = num;
     }
 
-    System.Console.WriteLine($"{A} -> {result + lastdigit}");
+    return Sum;
 }
-SumNumber(A);
+int sumNumber = SumNumber(A);
+System.Console.WriteLine($"{A} -> {sumNumber}");
