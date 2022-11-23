@@ -1,18 +1,15 @@
-﻿int[] myArray = new int[1000];
+﻿int num = 452;
+int result = ;
+int sum = 1;
 
-// myArray[0]=3;
-// myArray[1]= 23;
-// double number= Math.Pow( myArray[0],2);
-// System.Console.WriteLine(number);
-// System.Console.WriteLine(myArray[1]);
-// System.Console.WriteLine($"{myArray[0]}"+$"{myArray[1]}");
-
-void Arr(int[] myArray)
+for (int i = 0; 0 == sum; i++)
 {
-    int count = myArray.Length;
-    for (int i; i< Length; i++)
-    {
-        System.Console.WriteLine(myArray[i]);
-    }
+
+    
+    sum = num % 10;//452%10=2;sum=2
+
+    result = sum + result;//2+0=2
+    num = num / 10;//452/10=45
+    
 }
-Arr(myArray);
+Console.WriteLine(result);
