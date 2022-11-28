@@ -26,7 +26,7 @@ void PrintArray(int[] arr)
     Console.WriteLine("]");
 }
 
-bool SearchNumber (int[] arr, int num)
+bool  SearchNumber (int[] arr, int num)
 {
     //int num = Convert.ToInt32(Console.ReadLine());
     for (int i = 0; i < arr.Length; i++)

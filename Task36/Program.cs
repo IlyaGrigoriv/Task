@@ -41,8 +41,8 @@ int SumOddPosition(int[] arr)
 
 }
 
-int[] Array = NewArray(50, 1, 100);
+int[] Array = NewArray(5, -10, 50);
 PrintArray(Array);
 SumOddPosition(Array);
-System.Console.WriteLine(SumOddPosition(Array));
+System.Console.WriteLine($"--> {SumOddPosition(Array)}");
 

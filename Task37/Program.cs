@@ -29,7 +29,7 @@ void PrintArray(int[] arr)
     Console.WriteLine("]");
 }
 
-int SumCalcul(int [] arra)
+int [] SumCalcul(int [] arra)
 {
     int[] arr2 = new int[5];
         for (int i = 0; i < arra.Length; i++)

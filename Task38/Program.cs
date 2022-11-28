@@ -29,7 +29,7 @@ void PrintArray(double[] array)
 double DifferenceMaxMinArray(double[] arr)
 {
     double max = 0;
-    double min = 9999;
+    double min = 1000000;
     double dif = 0;
 
     for (int i = 0; i < arr.Length; i++)
@@ -47,4 +47,4 @@ double DifferenceMaxMinArray(double[] arr)
 
 double[] array = NewArray(5, 1, 10);
 PrintArray(array);
-System.Console.WriteLine(DifferenceMaxMinArray(array));
+System.Console.WriteLine($"-> {DifferenceMaxMinArray(array)}");
