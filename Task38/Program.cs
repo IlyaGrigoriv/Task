@@ -28,7 +28,7 @@ void PrintArray(double[] array)
 }
 double DifferenceMaxMinArray(double[] arr)
 {
-    double max = 0;
+    double max = -100000;
     double min = 1000000;
     double dif = 0;
 
@@ -37,14 +37,15 @@ double DifferenceMaxMinArray(double[] arr)
         if (arr[i] > max) max = arr[i];
         if (arr[i] < min) min = arr[i];
     }
+    
     dif = max - min;
     dif = Math.Round(dif, 2, MidpointRounding.ToZero);
 
-    return dif; 
+    return dif;
 }
 
 
 
-double[] array = NewArray(5, 1, 10);
+double[] array = NewArray(5, -1, -100);
 PrintArray(array);
 System.Console.WriteLine($"-> {DifferenceMaxMinArray(array)}");

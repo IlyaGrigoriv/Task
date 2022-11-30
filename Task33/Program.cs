@@ -26,23 +26,18 @@ void PrintArray(int[] arr)
     Console.WriteLine("]");
 }
 
-bool  SearchNumber (int[] arr, int num)
+bool SearchNumber(int[] arr, int num)
 {
     //int num = Convert.ToInt32(Console.ReadLine());
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr[i] == num) 
-        return true;
-        else return false;
+        return (arr[i] == num) ;
     }
-   else return false;
+
 }
-
-
 
 Console.WriteLine("Ввидите число");
 int number = Convert.ToInt32(Console.ReadLine());
 int[] Array = CreateArrayRndInt(5, 0, 400);
 PrintArray(Array);
-SearchNumber(Array, number);
-Console.WriteLine( SearchNumber(Array, number)? "да": "нет");
+Console.WriteLine(SearchNumber(Array, number) ? "да" : "нет");
