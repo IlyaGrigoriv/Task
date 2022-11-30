@@ -7,7 +7,7 @@
 
 
 int Num = 10;
-int[] arr = { 0, 0, 0, 0 };
+int[] arr = { 0, 0, 0, 0 }
 int[] sum(int[] arr, int Num)
 {
     for (int i = 0; Num == 0; i++)

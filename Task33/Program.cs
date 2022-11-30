@@ -31,7 +31,7 @@ bool SearchNumber(int[] arr, int num)
     //int num = Convert.ToInt32(Console.ReadLine());
     for (int i = 0; i < arr.Length; i++)
     {
-        return (arr[i] == num) ;
+        return (arr[i] == num);
     }
 
 }
@@ -40,4 +40,5 @@ Console.WriteLine("Ввидите число");
 int number = Convert.ToInt32(Console.ReadLine());
 int[] Array = CreateArrayRndInt(5, 0, 400);
 PrintArray(Array);
-Console.WriteLine(SearchNumber(Array, number) ? "да" : "нет");
+int searchNumber = SearchNumber(Array, number);
+Console.WriteLine((searchNumber) ? "да" : "нет");
