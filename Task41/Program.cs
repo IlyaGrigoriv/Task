@@ -16,8 +16,7 @@ int[] WriteNumArr(int[] arr, int numSize)
     for (int i = 0; i < numSize; i++)
     {
         Console.WriteLine($"Ввидите последовательно все числа {i + 1}");
-        int num1 = Convert.ToInt32(Console.ReadLine());
-        arr[i] = num1;
+        arr[i] = Convert.ToInt32(Console.ReadLine());
     }
     return arr;
 }
@@ -36,9 +35,10 @@ void PrintArray(int[] array)
 int NumNull(int[] array)
 {
     int sum = 0;
-    for (int i = 0; i < array.Length; i++)
-        if (array[i] >= 0) sum = i + 1;
-
+    int count = 1;
+    for (int i = 0; i < array.Length;count++, i++)
+        if (array[i] > 0) sum = +count;
+        else count=0;
     return sum;
 
 }
