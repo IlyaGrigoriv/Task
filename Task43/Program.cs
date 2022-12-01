@@ -17,9 +17,8 @@ double k2 = Convert.ToInt32(Console.ReadLine());
 
 double[] Metod(double b1, double k1, double b2, double k2)
 {
-    double y = 0;
-    double x = 0;
-    x = (b2 - b1) / (k1 - k2);
+    double y,x; 
+     x = (b2 - b1) / (k1 - k2);
     y = k1 * (b2 - b1) / (k1 - k2) + b1;
     double[] arr = new double[2];
     arr[0] = x;
