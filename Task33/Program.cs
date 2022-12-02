@@ -31,14 +31,16 @@ bool SearchNumber(int[] arr, int num)
     //int num = Convert.ToInt32(Console.ReadLine());
     for (int i = 0; i < arr.Length; i++)
     {
-        return (arr[i] == num);
+        if(arr[i] == num) return true;
+          
     }
+    return false;
 
 }
 
 Console.WriteLine("Ввидите число");
 int number = Convert.ToInt32(Console.ReadLine());
-int[] Array = CreateArrayRndInt(5, 0, 400);
+int[] Array = CreateArrayRndInt(5, 0, 4);
 PrintArray(Array);
-int searchNumber = SearchNumber(Array, number);
+bool searchNumber = SearchNumber(Array, number);
 Console.WriteLine((searchNumber) ? "да" : "нет");
