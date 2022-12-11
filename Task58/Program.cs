@@ -10,8 +10,8 @@
 
 int rows = 2;
 int colums = 2;
-int min = 2;
-int max = 4;
+// int min = 2;
+// int max = 4;
 int[,] Matrix = new int[,]
 {
     {2,4},
@@ -51,22 +51,26 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int[,] SumTwoMatrix(int[,] matrix, int[,] matrix2)
-{
-    int[,] matrix3 = new int[rows, colums];
+// int[,] SumTwoMatrix(int[,] matrix, int[,] matrix2)
+// {
+//     if (matrix.GetLength(0) == matrix2.GetLength(1))
+//     {
+//         int[,] matrix3 = new int[rows, colums];
 
-    for (int i = 0; i < Matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            for (int k = 1; k < matrix.GetLength(2)-1; k++)
-            {
-                matrix3[i, j] += matrix[i, k] * matrix2[k, j];
-            }
-        }
-    }
-    return matrix3;
-}
+//         for (int i = 0; i < matrix.GetLength(0); i++)
+//         {
+//             for (int j = 0; j < matrix.GetLength(1); j++)
+//             {
+//                 for (int k = 0; k < matrix.GetLength(0); k++)
+//                 {
+//                     matrix3[i, j] += matrix[j, k] * matrix2[k, j];
+//                 }
+//             }
+//         }
+//         return matrix3;
+//     }
+//    return 0; //непонимаю что можно записать кроме массива
+// }
 
 
 // int[,] Matrix = CreateMatrixRndInt(rows, colums, min, max);
@@ -74,6 +78,21 @@ PrintMatrix(Matrix);
 // int[,] Matrix2 = CreateMatrixRndInt(rows, colums, min, max);
 Console.WriteLine();
 PrintMatrix(Matrix2);
-int[,] Matrix3 = SumTwoMatrix(Matrix, Matrix2);
+//int[,] Matrix3 = SumTwoMatrix(Matrix, Matrix2);
+int[,] Matrix3 =SumTwoMatrix2( Matrix, Matrix2);
+PrintMatrix(Matrix3);
+
 Console.WriteLine();
 PrintMatrix(Matrix3);
+
+int[,] SumTwoMatrix2(int [,] matrix, int [,] matrix2)
+{
+    int [,] matrix3 = new int [matrix.GetLength(0),matrix2.GetLength(1)];
+
+    matrix3[0,0] = (matrix[0,0]*matrix2[0,0])+(Matrix[0,1]*matrix2[1,0]);
+    matrix3[1,0] = (matrix[1,0]*matrix2[0,0])+(Matrix[1,1]*matrix2[1,0]);
+    matrix3[0,1] = (matrix[0,0]*matrix2[0,1])+(Matrix[0,1]*matrix2[1,1]);
+    matrix3[1,1] = (matrix[1,0]*matrix2[0,1])+(Matrix[1,1]*matrix2[1,1]);
+return matrix3;
+
+}

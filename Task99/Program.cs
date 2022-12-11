@@ -35,8 +35,8 @@ int[,] Matrix2 = new int[,]
 // int[,] matrixItog = new int[rows, colums];
 // int[] matrix4 = new int[colums];
 
-// for (int i = 0; i < Matrix.GetLength(0); i++)
-// {
+for (int i = 0; i < Matrix.GetLength(0); i++)
+{
     int temp = 0;
     int temp2 = 0;
     for (int j = 0; j < Matrix.GetLength(0); j++)
@@ -51,7 +51,7 @@ int[,] Matrix2 = new int[,]
         temp2+= Matrix[0, k] * Matrix2[0,k ];System.Console.WriteLine($"2   --{temp2}");
     }
 
-// }
+}
 
 
 
