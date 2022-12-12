@@ -51,26 +51,26 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-// int[,] SumTwoMatrix(int[,] matrix, int[,] matrix2)
-// {
-//     if (matrix.GetLength(0) == matrix2.GetLength(1))
-//     {
-//         int[,] matrix3 = new int[rows, colums];
+int[,] SumTwoMatrix(int[,] matrix, int[,] matrix2)
+{
+    if (matrix.GetLength(0) == matrix2.GetLength(1))
+    {
+        int[,] matrix3 = new int[rows, colums];
 
-//         for (int i = 0; i < matrix.GetLength(0); i++)
-//         {
-//             for (int j = 0; j < matrix.GetLength(1); j++)
-//             {
-//                 for (int k = 0; k < matrix.GetLength(0); k++)
-//                 {
-//                     matrix3[i, j] += matrix[j, k] * matrix2[k, j];
-//                 }
-//             }
-//         }
-//         return matrix3;
-//     }
-//    return 0; //непонимаю что можно записать кроме массива
-// }
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < matrix.GetLength(1); j++)
+            {
+                for (int k = 0; k < matrix.GetLength(0); k++)
+                {
+                    matrix3[i, j] += matrix[j, k] * matrix2[k, j];
+                }
+            }
+        }
+        return matrix3;
+    }
+   return 0; //непонимаю что можно записать кроме массива
+}
 
 
 // int[,] Matrix = CreateMatrixRndInt(rows, colums, min, max);

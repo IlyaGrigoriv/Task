@@ -14,7 +14,7 @@ int B = Convert.ToInt32(Console.ReadLine());
 DegreeNumber(A,B);
 int DegreeNumber(int A, int B)
 {
-    if (B == A) return 1;
-    return DegreeNumber(A, B - 1) + A;
+    if (A > B) return 0;
+    return A + DegreeNumber(A+1, B) ;
 }
 System.Console.WriteLine(DegreeNumber(A,B));
